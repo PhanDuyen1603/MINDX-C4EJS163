@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+
+}
+
+.header {
+    height: 100px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu {
+    font-size: 20px;
+    font-weight: 300;
+
+    a {
+        color: #1A2434;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+}
+
+.search {
+    border-radius: 8px !important;
+    background-color: #FFFFFF !important;
+    border: 1px solid #EBEFF6 !important;
+}
+
+input#search-input {
+    border: 1px solid #EBEFF6;
+    border-radius: 8px;
+    padding: 18px;
+    font-family: Outfit;
+}
+
+.cart {
+    margin-right: 20px;
+}
+
+.content-images {
+    width: fit-content;
+    position: relative;
+    border-left: 4px solid #A4074D;
+    width: 100%;
+    height: 96px;
+
+    img {
+        position: absolute;
+    }
+
+    img:nth-child(2) {
+        left: 4ch;
+    }
+
+    img:nth-child(3) {
+        left: 80px;
+    }
+
+    img:nth-child(4) {
+        left: 120px;
+    }
+
+    img:nth-child(5) {
+        left: 160px;
+    }
+}
+
+.total-students {
+    font-family: "Inter", sans-serif !important;
+    font-weight: 700 !important;
+    color: #1A2434;
+}
+
+.description {
+    font-family: "Inter", sans-serif !important;
+    font-weight: 300 !important;
+    line-height: 180% !important;
+}
+
+.content-main-image-box {
+    position: relative;
+}
+
+.user-main {}
+
+.user-info-box {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    border-radius: 10px;
+    border: 1px solid #0000000A;
+    background: #FFFFFF;
+    padding: 20px 30px;
+    left: -120px;
+    top: 45px;
+}
+
+.user-avatar{
+    margin-right: 10px;
+}
