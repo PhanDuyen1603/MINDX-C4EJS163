@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 60px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* ===== LOGO ===== */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #222;
+}
+
+/* ===== ICON MENU (3 gạch) ===== */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.menu-icon span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background-color: #5D50C6;
+    border-radius: 2px;
+}
+
+/* ===== MENU DESKTOP ===== */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #666;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: #5D50C6;
+}
+
+/* ===== BUTTONS ===== */
+.nav-buttons {
+    display: flex;
+    gap: 16px;
+    margin-left: auto;
+}
+
+.btn-login {
+    text-decoration: none;
+    color: #222;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+
+.btn-login:hover {
+    color: #5D50C6;
+}
+
+.btn-signup {
+    text-decoration: none;
+    color: white;
+    background-color: #5D50C6;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: 24px;
+}
+
+.btn-signup:hover {
+    background-color: #4a3fa5;
+}
+
+/* ===== TABLET: 768px - 1024px ===== */
+@media (max-width: 1024px) {
+    /* Hiện icon menu */
+    .menu-icon {
+        display: flex;
+    }
+    
+    /* Ẩn menu desktop */
+    .nav-menu {
+        display: none;
+    }
+    
+    /* Logo vào giữa */
+    .logo {
+        margin: 0 auto;
+    }
+}
+
+/* ===== MOBILE: < 768px ===== */
+@media (max-width: 767px) {
+    .navbar {
+        padding: 16px 20px;
+        justify-content: space-between;
+        gap: 0;
+    }
+    
+    /* Logo về bên trái */
+    .logo {
+        margin: 0;
+        font-size: 18px;
+    }
+    
+    .logo svg {
+        width: 28px;
+        height: 28px;
+    }
+    
+    /* Icon menu sang bên phải */
+    .menu-icon {
+        order: 1;
+    }
+    
+    /* Ẩn buttons */
+    .nav-buttons {
+        display: none;
+    }
+}
